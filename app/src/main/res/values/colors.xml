@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#5E4099</color>
+    <color name="primaryVarient">#FF6200EE</color>
+    <color name="secondry">#3BFF29C3</color>
+    <color name="secondryVarient">#3BFF29C3</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_purple">#B85E4099</color>
+    <color name="background_pink">#3BFF29C3</color>
+    <color name="black_main">#131313</color>
+    <color name="red">#FF1A39</color>
+    <color name="hint">#99FFFFFF</color>
+
+
+
+</resources>

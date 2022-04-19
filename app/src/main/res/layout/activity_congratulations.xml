@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    tools:context=".Activities.CongratulationsActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="78dp"
+        android:foreground="?actionBarItemBackground"
+        android:onClick="ivBack"
+        android:padding="5dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAllDone"
+        style="@style/algereya_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="Congratulations"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/iv_back"
+        app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+    <TextView
+        android:id="@+id/_tv_create"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="5dp"
+        android:text="You created your first account "
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/tvAllDone" />
+
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/robboto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/provide"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvAllDone"
+        app:layout_constraintTop_toBottomOf="@id/_tv_create" />
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/robboto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/do_you"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvAllDone"
+        app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_yes"
+        style="@style/Widget.Neumorph.FloatingActionButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:onClick="btnYes"
+        android:text="YES"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:theme="@style/algereya_medium"
+        app:layout_constraintEnd_toStartOf="@+id/btn_no"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/tv2"
+        app:layout_constraintTop_toTopOf="@+id/btn_no"
+        app:neumorph_backgroundColor="#402C60"
+        app:neumorph_shadowColorDark="#36132E"
+        app:neumorph_shadowColorLight="#5A3054"
+        app:neumorph_shadowElevation="2dp"
+        app:neumorph_shapeType="flat"
+        app:neumorph_strokeWidth="0dp" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_no"
+        style="@style/Widget.Neumorph.FloatingActionButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="No"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:theme="@style/algereya_medium"
+        app:layout_constraintEnd_toEndOf="@+id/tv2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_yes"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        app:neumorph_backgroundColor="#402C60"
+        app:neumorph_shadowColorDark="#36132E"
+        app:neumorph_shadowColorLight="#5A3054"
+        app:neumorph_shadowElevation="2dp"
+        app:neumorph_shapeType="flat"
+        app:neumorph_strokeWidth="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

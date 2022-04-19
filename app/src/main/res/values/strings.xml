@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Defindor</string>
+    <string name="security_text">* for security please make sure it is spelled exactly as it would be on your passport or ID card</string>
+    <string name="content">Our Encrypted service will prevent any unauthorized users\n\nCurabitur posuere habitant tempus pellentesque vestibulum, diam justo. Metus, consectetur et mollis diam, dapibus adipiscing sed tortor. Tortor ultricies urna diam at eu enim sit.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Congue malesuada id aliquam ac quam vestibulum eget pellentesque.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Congue malesuada id aliquam ac quam vestibulum eget pellentesque.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Congue malesuada id aliquam ac quam vestibulum eget pellentesque.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Congue malesuada id aliquam ac quam vestibulum eget pellentesque.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Congue malesuada id aliquam ac quam vestibulum eget pellentesque. </string>
+    <string name="security1">For security reasons we only allow 2 attempts to key in the Single key password</string>
+    <string name="security2">To proceed and reset your Single Key password please type in the last 4 digits of the credit card on file</string>
+    <string name="text0">We provide 100% access to our service for 30 days for absolutely FREE of charge\n\nWe don’t ask for your credit card or any other form of payment while you are trying our service.\n\n
+For 30 days you can setup as many accounts as you need and have access to our customer support 24/7.\n\n
+We are so sure about our service that we know you will like it, we have no reason to lock you into a plan if you don’t wish to continue with us.\n\n
+After 30 days you will be asked for your first payment of $3 per account, if you don’t wish to proceed you may cancel anytime\n\n Here are a few things to keep in mind:
+</string>
+    <string name="text2">If you are locked out of your account you will need to provide a payment to recover your account</string>
+    <string name="tv3">Our system is setup that each Encrypted email is dedicated to one Crypto Wallet. In the event a user will try to use his dedicated Encrypted Email with a different Crypto wallet other than the one setup for it, all Emails will be rejected and the user will be informed that only one account can be used per Encrypted Email, you may have unlimited Emails setup on our system. (Each will incur a $3 fee per Encrypted Email per account per month)</string>
+    <string name="text4">We recommend paying for the whole year to make sure no interruption of service to any of your crypto wallets</string>
+    <string name="text5">The DEFINDOR platform is fully encrypted and designed in a way that that none of our team members can see or download any of the emails that are sent to any user. Even in an event where our platform might (unlikely) get hacked, none of any user information cannot be seen or retrieved. User accounts live on their app and are secured and protected by 256bit end to end encryption.</string>
+    <string name="step_3">Go to your Crypto Wallet and swap your main account email with your <font fgcolor="#5E4099"> New DEFINDOR Email </font> we just generated for you \n\nOur Encrypted service will prevent any unauthorized users from approving transactions on your behalf</string>
+    <string name="provide">You can only use the provided email with one account</string>
+    <string name="do_you">Do you have another crypto wallet you seek to secure?</string>
+</resources>

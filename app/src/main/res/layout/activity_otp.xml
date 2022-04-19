@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    tools:context=".Activities.Auth.OtpActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="78dp"
+        android:foreground="?actionBarItemBackground"
+        android:onClick="ivBack"
+        android:padding="5dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/_tv_create_account"
+        style="@style/algereya_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="Create a \nnew Account"
+        android:textAllCaps="true"
+        android:textColor="#33FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/iv_back"
+        app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/_tv_create_account"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            style="@style/robboto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Code that was sent to your email"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <com.chaos.view.PinView
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cursorColor="@color/white"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="true"
+            app:itemCount="6"
+            app:itemSpacing="8dp"
+            app:itemWidth="20dp"
+            app:lineColor="#CCFFFFFF"
+            app:lineWidth="1dp"
+            app:viewType="line" />
+
+
+        <TextView
+            style="@style/robboto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Code that was sent to your Phone number"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+        <com.chaos.view.PinView
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:cursorVisible="true"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cursorColor="@color/white"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="true"
+            app:itemCount="4"
+            app:itemSpacing="8dp"
+            app:itemWidth="20dp"
+            app:lineColor="#CCFFFFFF"
+            app:lineWidth="1dp"
+            app:viewType="line" />
+    </LinearLayout>
+
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btnNext"
+        style="@style/Widget.Neumorph.FloatingActionButton"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:onClick="btnNext"
+        android:paddingStart="5dp"
+        android:text="Next"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:theme="@style/algereya_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:neumorph_backgroundColor="#402C60"
+        app:neumorph_shadowColorDark="#36132E"
+        app:neumorph_shadowColorLight="#5A3054"
+        app:neumorph_shadowElevation="2dp"
+        app:neumorph_shapeType="flat"
+        app:neumorph_strokeWidth="0dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20sp"
+        android:src="@drawable/ic_next"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNext"
+        app:layout_constraintEnd_toEndOf="@+id/btnNext"
+        app:layout_constraintTop_toTopOf="@+id/btnNext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

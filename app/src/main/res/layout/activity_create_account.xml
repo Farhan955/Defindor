@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    tools:context=".Activities.Auth.CreateAccountActivity">
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="78dp"
+        android:foreground="?actionBarItemBackground"
+        android:onClick="ivBack"
+        android:padding="5dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/_tv_create_account"
+        style="@style/algereya_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="Create a \nnew Account"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="@+id/iv_back"
+        app:layout_constraintTop_toBottomOf="@+id/iv_back" />
+
+
+    <EditText
+        android:id="@+id/et_f_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/white"
+        android:hint="First name"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@+id/_tv_create_account" />
+
+
+    <EditText
+        android:id="@+id/et_m_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
+        android:hint="Middle name"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@+id/et_f_name" />
+
+    <EditText
+        android:id="@+id/et_l_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="48dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
+        android:hint="Last name"
+        android:inputType="textPersonName"
+        android:maxLength="30"
+        android:paddingHorizontal="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint"
+        android:textSize="13sp"
+        app:layout_constraintTop_toBottomOf="@+id/et_m_name" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/security_text"
+        android:textColor="@color/hint"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_l_name" />
+
+
+    <!--<androidx.cardview.widget.CardView
+
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:cardCornerRadius="35dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="80dp"
+        app:cardElevation="25dp"
+        app:neumorph_shadowColorDark="@color/white"
+        app:neumorph_shadowColorLight="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardBackgroundColor="#402C60">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_next"
+                android:layout_marginStart="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvNext"
+                app:layout_constraintStart_toEndOf="@+id/tvNext"
+                app:layout_constraintTop_toTopOf="@+id/tvNext" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>-->
+
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btnNext"
+        style="@style/Widget.Neumorph.FloatingActionButton"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:onClick="btnNext"
+        android:paddingStart="5dp"
+        android:text="Next"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        android:theme="@style/algereya"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:neumorph_backgroundColor="#402C60"
+        app:neumorph_shadowColorDark="#36132E"
+        app:neumorph_shadowColorLight="#5A3054"
+        app:neumorph_shadowElevation="2dp"
+        app:neumorph_shapeType="flat"
+        app:neumorph_strokeWidth="0dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20sp"
+        android:src="@drawable/ic_next"
+        app:layout_constraintBottom_toBottomOf="@+id/btnNext"
+        app:layout_constraintEnd_toEndOf="@+id/btnNext"
+        app:layout_constraintTop_toTopOf="@+id/btnNext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
