@@ -27,11 +27,11 @@ class SplashActivity : AppCompatActivity() {
             .load(R.drawable.splash_gif)
             .into(binding.imageView)
 
-
         Handler().postDelayed({
-            startActivity(Intent(context,StartActivity::class.java))
+            startActivity(Intent(context, StartActivity::class.java))
             finish()
-                              },1500)
+        }, 1500)
+
     }
 
 }
