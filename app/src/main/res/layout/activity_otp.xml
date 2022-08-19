@@ -52,6 +52,7 @@
             android:textSize="15sp" />
 
         <com.chaos.view.PinView
+            android:id="@+id/pin_email"
             style="@style/PinWidget.PinView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -85,6 +86,7 @@
 
 
         <com.chaos.view.PinView
+            android:id="@+id/pin_phone"
             style="@style/PinWidget.PinView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

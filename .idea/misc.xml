@@ -29,6 +29,17 @@
         <entry key="..\:/AndroidProjects/Defindor/app/src/main/res/layout/item_coin_search.xml" value="0.27291666666666664" />
         <entry key="..\:/AndroidProjects/Defindor/app/src/main/res/layout/layout_security.xml" value="0.27291666666666664" />
         <entry key="..\:/AndroidProjects/Defindor/app/src/main/res/layout/search_vault.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidProjects/defindor/app/src/main/res/drawable/ic_dialog_bg.xml" value="0.1345" />
+        <entry key="..\:/AndroidProjects/defindor/app/src/main/res/layout/activity_create_account.xml" value="0.33" />
+        <entry key="..\:/AndroidProjects/defindor/app/src/main/res/layout/activity_create_vault.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidProjects/defindor/app/src/main/res/layout/activity_otp.xml" value="0.25" />
+        <entry key="..\:/AndroidProjects/defindor/app/src/main/res/layout/activity_search_coins.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidProjects/defindor/app/src/main/res/layout/activity_splash.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidProjects/defindor/app/src/main/res/layout/item_coin_search.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidProjects/defindor/app/src/main/res/layout/item_exchange.xml" value="0.27291666666666664" />
+        <entry key="..\:/AndroidProjects/defindor/app/src/main/res/layout/loading_dialog.xml" value="0.12552083333333333" />
+        <entry key="..\:/AndroidProjects/defindor/app/src/main/res/layout/progress_dialog.xml" value="0.12552083333333333" />
+        <entry key="..\:/AndroidProjects/defindor/app/src/main/res/layout/search_vault.xml" value="0.27291666666666664" />
       </map>
     </option>
   </component>

@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "com.techoship.defindor"
-        minSdk 21
+        minSdk 23
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -42,6 +42,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'com.google.android.gms:play-services-location:19.0.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
@@ -54,5 +55,22 @@ dependencies {
 
     implementation 'com.github.bumptech.glide:glide:4.12.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    // JSON Parsing
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    //HTTP Loger interseptor
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.3")
+
+
+
+    def lottieVersion = "3.4.0"
+    implementation "com.airbnb.android:lottie:$lottieVersion"
+    implementation 'com.github.dhaval2404:imagepicker:2.1'//image picker
+    //volley
+    implementation 'com.android.volley:volley:1.2.0'
+    //Shared Pref Encryption
+    implementation 'androidx.security:security-crypto-ktx:1.1.0-alpha03'
 
 }

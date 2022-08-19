@@ -5,18 +5,18 @@ import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
-import android.view.animation.AnimationUtils
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import com.daimajia.androidanimations.library.Techniques
 import com.daimajia.androidanimations.library.YoYo
-import com.techoship.defindor.R
+import com.idealogics.eatlaa.Utils.SharedPref
 import com.techoship.defindor.databinding.ActivityStartBinding
 
 
 class StartActivity : AppCompatActivity() {
     val context = this
+    val sp = SharedPref(context)
     private lateinit var binding: ActivityStartBinding
 
     @RequiresApi(Build.VERSION_CODES.R)
@@ -27,7 +27,9 @@ class StartActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         _init_()
+
     }
+
 
     private fun _init_() {
 
@@ -35,16 +37,12 @@ class StartActivity : AppCompatActivity() {
 //        val slideAnimation = AnimationUtils.loadAnimation(this, R.anim.bottom_up)
 //        binding.imageView.startAnimation(slideAnimation)
 
-
         Handler().postDelayed({
-
             binding.ivWallet.visibility = View.VISIBLE
-
             YoYo.with(Techniques.ZoomInUp)
                 .duration(1000)
                 .repeat(0)
                 .playOn(binding.ivWallet)
-
             showLogo()
 
         }, 200)
@@ -109,6 +107,7 @@ class StartActivity : AppCompatActivity() {
     }
 
     fun btnNewAccount(view: View) {
+
         startActivity(Intent(context, CreateAccountActivity::class.java))
     }
 
